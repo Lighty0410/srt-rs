@@ -219,7 +219,7 @@ impl AutomaticRepeatRequestAlgorithm {
             ack_number: dsn,
             rtt: self.rtt.mean(),
             rtt_variance: self.rtt.variance(),
-            buffer_available: 100, // TODO: add this
+            buffer_available: 10_000, // TODO: add this
             packet_recv_rate,
             est_link_cap,
             data_recv_rate,
